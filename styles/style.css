@@ -1,6 +1,144 @@
+/* common section */
+.btn-primary{
+
+}
+
+
 /* word sens font */
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap');
 *{
     font-family: 'Work Sans', sans-serif;
 }
+  
+/* common section */
+.btn-primary{
+  color: #FFF;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 20px;
 
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 8px;
+  background: #FF900E;
+  border: none;
+  width: 180px;
+  height: 64px;
+  margin-bottom: 50px;
+  }
+
+/* Header style */
+header{
+  background-color: rgba(255, 144, 14, 0.10);
+
+  padding: 30px 235px;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.nav-title{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #131313;
+  align-items: center;
+}
+nav > ul{
+
+  display: flex;
+}
+nav li{
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+nav li a{
+  text-decoration: none;
+  color: #424242;
+}
+
+/* baner */
+.banner-content{
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+.banner-title{
+  font-size: 4rem;
+  font-weight: 700;
+  color: #131313;
+
+}
+.banner-description{
+  max-width: 868px;
+  color: var(--dark-03, #727272);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
+}
+
+
+
+/* responsive media quwry */
+@media screen and (max-width: 567px) {
+  header{
+    padding: 20px;
+  }  
+  nav{
+    flex-direction: column;
+  }
+  .baner img{
+    max-width: 100%;
+  }
+}
+
+/* table or medium device */
+@media screen and (min-width: 567px) and (max-width:920px) {
+  header{
+    padding: 50px;
+    
+  } 
+  nav{
+    flex-direction: column;
+  } 
+}
+
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+/* teams strart */
+.teamas-container{
+  display: flex;
+  align-items: center;
+}
+.teams-img-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5rem;
+}
+.teams-content{
+  padding-right: 70px;
+  padding-left: 70px;
+}
+.treams-title{
+  font-size: 2.8rem;
+}
+.treams-title .quick-list{
+  color: #727272;
+  font-weight: 500;
+}
+.treams-title .text-features{
+  color: #FF900E;
+  font-weight: 700;
+}
